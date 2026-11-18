@@ -65,7 +65,7 @@ export function RootLayout() {
       }}
     >
       <div
-        className="min-h-screen flex flex-col selection:bg-[#6F1D1B] selection:text-[#FFE6A7]"
+        className="min-h-screen flex flex-col selection:bg-brand-wine selection:text-brand-espresso"
         style={{
           backgroundColor: PALETTE.espresso,
           color: PALETTE.darkCoffee,
