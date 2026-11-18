@@ -1,0 +1,132 @@
+# ==============================================================================
+# Frontend Web Development .gitignore
+# Compatible with: HTML5, CSS3, JavaScript, TypeScript, React, Vite, Next.js, Tailwind CSS
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# Dependencies
+# ------------------------------------------------------------------------------
+node_modules/
+jspm_packages/
+web_modules/
+.pnpm-store/
+
+# ------------------------------------------------------------------------------
+# Production Builds, Bundler Outputs & Static Exports
+# ------------------------------------------------------------------------------
+dist/
+dist-ssr/
+build/
+out/
+.next/
+.nuxt/
+.astro/
+.output/
+.svelte-kit/
+.parcel-cache/
+.serverless/
+.fusebox/
+
+# ------------------------------------------------------------------------------
+# Environment Variables & Secret Keys
+# Never commit real credentials, API keys, or private tokens!
+# ------------------------------------------------------------------------------
+.env
+.env*.local
+.env.local
+.env.development.local
+.env.test.local
+.env.production
+.env.production.local
+.env.staging
+
+# Keep example and template environment files tracked for onboarding
+!.env.example
+!.env.template
+
+# ------------------------------------------------------------------------------
+# Runtime Logs & Diagnostic Dumps
+# ------------------------------------------------------------------------------
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ------------------------------------------------------------------------------
+# Testing, Coverage Reports & Browser Automation Artifacts
+# ------------------------------------------------------------------------------
+coverage/
+*.lcov
+.nyc_output/
+playwright-report/
+test-results/
+.playwright/
+cypress/videos/
+cypress/screenshots/
+
+# ------------------------------------------------------------------------------
+# Caches, Compilers & Tooling Internals
+# ------------------------------------------------------------------------------
+.cache/
+.turbo/
+.swc/
+.vite/
+.rollup.cache/
+*.tsbuildinfo
+.eslintcache
+.stylelintcache
+.prettiercache
+
+# ------------------------------------------------------------------------------
+# Operating System Files & Metadata
+# ------------------------------------------------------------------------------
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# Linux
+*~
+
+# ------------------------------------------------------------------------------
+# IDEs & Code Editor Workspaces
+# ------------------------------------------------------------------------------
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# JetBrains / WebStorm / IntelliJ
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Miscellaneous Editors
+*.sublime-workspace
+*.sublime-project
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+*.swo
+
+# ------------------------------------------------------------------------------
+# Temporary Files & Scratch
+# ------------------------------------------------------------------------------
+*.tmp
+*.bak
+*.orig
