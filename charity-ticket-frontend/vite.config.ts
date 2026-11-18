@@ -1,0 +1,45 @@
+import path from 'path'
+import { defineConfig } from 'vitest/config'
+import react from '@vitejs/plugin-react'
+import tailwindcss from '@tailwindcss/vite'
+
+// https://vite.dev/config/
+export default defineConfig({
+  plugins: [
+    react(),
+    tailwindcss(),
+  ],
+  resolve: {
+    alias: {
+      '@': path.resolve(import.meta.dirname, './src'),
+    },
+  },
+  build: {
+    rolldownOptions: {
+      output: {
+        codeSplitting: {
+          groups: [
+            {
+              name: 'react-vendor',
+              test: /node_modules[\\/](react|react-dom)[\\/]/,
+            },
+            {
+              name: 'tanstack-vendor',
+              test: /node_modules[\\/]@tanstack[\\/]/,
+            },
+            {
+              name: 'forms-vendor',
+              test: /node_modules[\\/](zod|react-hook-form|@hookform|react-dropzone)[\\/]/,
+            },
+          ],
+        },
+      },
+    },
+  },
+  test: {
+    globals: true,
+    environment: 'jsdom',
+    setupFiles: './src/test/setup.ts',
+    exclude: ['node_modules', 'dist', 'e2e'],
+  },
+})
