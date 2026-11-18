@@ -31,7 +31,7 @@ export function CheckoutProgressHeader({
       <button
         type="button"
         onClick={onBackToLanding}
-        className="inline-flex items-center gap-2 text-sm font-bold py-2 px-3.5 rounded-xl border self-start transition-colors hover:bg-[#FFFBF0] focus-brand"
+        className="inline-flex items-center gap-2 text-sm font-bold py-2 px-3.5 rounded-xl border self-start transition-colors hover:bg-brand-surface-card focus-brand"
         style={{
           backgroundColor: 'rgba(255, 251, 240, 0.78)',
           borderColor: PALETTE.camel,
