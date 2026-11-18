@@ -33,7 +33,7 @@ export function PrHallLocationModal({
       role="dialog"
       aria-modal="true"
       aria-labelledby="pr-hall-modal-title"
-      className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-[#432818]/65 backdrop-blur-sm"
+      className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-brand-coffee/65 backdrop-blur-sm"
       onClick={onClose}
     >
       <div
@@ -64,7 +64,7 @@ export function PrHallLocationModal({
             type="button"
             onClick={onClose}
             aria-label="Close venue modal"
-            className="p-2 rounded-xl border hover:bg-[#FFF5DC] focus-brand"
+            className="p-2 rounded-xl border hover:bg-brand-surface-soft focus-brand"
             style={{ borderColor: PALETTE.camel, color: PALETTE.darkCoffee }}
           >
             <X className="w-4 h-4" />
@@ -106,7 +106,7 @@ export function PrHallLocationModal({
             onClick={() =>
               copy(EVENT_META.venueAddress, 'PR Hall venue location')
             }
-            className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs font-bold border hover:bg-[#FFF5DC] focus-brand"
+            className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs font-bold border hover:bg-brand-surface-soft focus-brand"
             style={{
               borderColor: PALETTE.camel,
               color: PALETTE.darkCoffee,
