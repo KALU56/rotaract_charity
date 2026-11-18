@@ -356,7 +356,7 @@ export function QrPassVaultStep({ onStartPurchase }: QrPassVaultStepProps) {
             <button
               type="button"
               onClick={() => onStartPurchase('individual', true)}
-              className="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl text-xs font-bold border hover:bg-[#FFF5DC] focus-brand"
+              className="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl text-xs font-bold border hover:bg-brand-surface-soft focus-brand"
               style={{
                 borderColor: PALETTE.camel,
                 color: PALETTE.darkCoffee,
@@ -407,7 +407,7 @@ export function QrPassVaultStep({ onStartPurchase }: QrPassVaultStepProps) {
                   <tr
                     key={ord.orderId}
                     onClick={() => setActiveOrderId(ord.orderId)}
-                    className="cursor-pointer transition-colors hover:bg-[#FFF5DC]"
+                    className="cursor-pointer transition-colors hover:bg-brand-surface-soft"
                     style={{
                       backgroundColor: isSelected
                         ? PALETTE.surfaceSoft
