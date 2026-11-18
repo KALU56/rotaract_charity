@@ -546,7 +546,7 @@ export function StudentDetailsStep({
                     selectedPaymentChannel.accountLabel
                   )
                 }
-                className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-bold border hover:bg-[#FFFBF0] focus-brand"
+                className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-bold border hover:bg-brand-surface-card focus-brand"
                 style={{
                   backgroundColor: PALETTE.surfaceCard,
                   borderColor: PALETTE.camel,
@@ -616,7 +616,7 @@ export function StudentDetailsStep({
                 {...getRootProps()}
                 role="button"
                 tabIndex={0}
-                className="w-full px-4 py-3 rounded-xl border-2 border-dashed text-left flex items-center justify-between gap-2 transition-colors hover:bg-[#FFE6A7]/40 focus-brand cursor-pointer"
+                className="w-full px-4 py-3 rounded-xl border-2 border-dashed text-left flex items-center justify-between gap-2 transition-colors hover:bg-brand-espresso/40 focus-brand cursor-pointer"
                 style={{
                   backgroundColor: isDragActive
                     ? PALETTE.espresso
@@ -685,7 +685,7 @@ export function StudentDetailsStep({
             <button
               type="button"
               onClick={onBack}
-              className="inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-2xl text-sm font-bold border hover:bg-[#FFF5DC] focus-brand"
+              className="inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-2xl text-sm font-bold border hover:bg-brand-surface-soft focus-brand"
               style={{
                 borderColor: PALETTE.camel,
                 color: PALETTE.darkCoffee,
