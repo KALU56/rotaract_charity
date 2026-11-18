@@ -157,7 +157,7 @@ export function PassSelectionStep({ onNext }: PassSelectionStepProps) {
                         onClick={() => updateQuantity(tier.id, -1)}
                         disabled={qty === 0}
                         aria-label={`Decrease ${tier.name} quantity`}
-                        className="w-11 h-11 rounded-xl border flex items-center justify-center transition-colors disabled:opacity-35 hover:bg-[#FFE6A7] focus-brand"
+                        className="w-11 h-11 rounded-xl border flex items-center justify-center transition-colors disabled:opacity-35 hover:bg-brand-espresso focus-brand"
                         style={{
                           backgroundColor: PALETTE.surfaceCard,
                           borderColor: PALETTE.camel,
