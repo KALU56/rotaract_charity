@@ -28,7 +28,7 @@ export function HeroSection({
     >
       <div
         aria-hidden="true"
-        className="hidden lg:block absolute inset-x-8 top-5 bottom-5 rounded-[32px] border pointer-events-none"
+        className="hidden lg:block absolute inset-x-8 top-5 bottom-5 rounded-4xl border pointer-events-none"
         style={{ borderColor: 'rgba(153, 88, 42, 0.16)' }}
       />
 
@@ -210,7 +210,7 @@ export function HeroSection({
               <button
                 type="button"
                 onClick={() => onNavigateSection('charity-goal-section')}
-                className="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-2xl text-base font-bold border transition-colors hover:bg-[#FFFBF0] focus-brand"
+                className="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-2xl text-base font-bold border transition-colors hover:bg-brand-surface-card focus-brand"
                 style={{
                   backgroundColor: 'rgba(255, 251, 240, 0.8)',
                   borderColor: PALETTE.camel,
@@ -239,7 +239,7 @@ export function HeroSection({
               />
 
               <div
-                className="relative rounded-[28px] overflow-hidden border-2 shadow-2xl aspect-[4/3]"
+                className="relative rounded-[28px] overflow-hidden border-2 shadow-2xl aspect-4/3"
                 style={{
                   borderColor: PALETTE.surfaceCard,
                   backgroundColor: PALETTE.darkCoffee,
@@ -256,7 +256,7 @@ export function HeroSection({
                 />
                 <div
                   aria-hidden="true"
-                  className="absolute inset-0 bg-gradient-to-t from-[#432818]/65 via-transparent to-transparent"
+                  className="absolute inset-0 bg-linear-to-t from-brand-coffee/65 via-transparent to-transparent"
                 />
               </div>
 
@@ -309,7 +309,7 @@ export function HeroSection({
                   <button
                     type="button"
                     onClick={() => onNavigateSection('tickets-section')}
-                    className="text-xs font-bold px-3.5 py-2 rounded-xl border transition-colors hover:bg-[#FFE6A7] focus-brand"
+                    className="text-xs font-bold px-3.5 py-2 rounded-xl border transition-colors hover:bg-brand-espresso focus-brand"
                     style={{
                       borderColor: PALETTE.camel,
                       color: PALETTE.darkCoffee,
